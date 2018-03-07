@@ -8,7 +8,7 @@ This is Caesar's Chipher
 import string
 
 SHIFT = 3
-HOICE = input("would you like to encode or decode?")
+CHOICE = input("would you like to encode or decode?")
 WORD = input("Please enter text")
 LETTERS = string.ascii_letters + string.punctuation + string.digits
 ENCODED = ''
