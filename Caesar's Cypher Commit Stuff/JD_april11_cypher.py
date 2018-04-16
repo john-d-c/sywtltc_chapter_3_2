@@ -1,7 +1,7 @@
 import string
 
 def encode(text):
-    letters = string.ascii_letters + string.punctuation + string.digits
+    letters = string.ascii_letters + string.punctuation + string.digits + string.ascii_letters + string.punctuation + string.digits
     secret = ''
     for letter in text:
         if letter == ' ':
