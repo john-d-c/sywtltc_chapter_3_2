@@ -3,7 +3,7 @@
 
 import string
 
-def encode(text,shift):
+def encode(text, shift):
     """this is my encoding function"""
     letters = string.ascii_letters + string.punctuation + string.digits + string.ascii_letters
     secret = ''
@@ -15,7 +15,7 @@ def encode(text,shift):
             secret = secret + letters[shifted]
     return secret
 
-def decode(text,shift):
+def decode(text, shift):
     """this is my decode function"""
     letters = string.ascii_letters + string.punctuation + string.digits
     secret = ''
@@ -32,10 +32,10 @@ if __name__ == "__main__":
     ANSWER = input("would you like to encode or decode a word? ")
     TEXT = input("Please enter the text that you would like encoded/decode: ")
     if ANSWER == "encode":
-        SECRET = encode(TEXT,SHIFT)
+        SECRET = encode(TEXT, SHIFT)
         print("Great, your new encoded word is", SECRET)
     elif ANSWER == "decode":
-        SECRET = decode(TEXT,SHIFT)
+        SECRET = decode(TEXT, SHIFT)
         print("Awesome, your new decoded word is", SECRET)
     else:
         print("I'm sorry, I did not recognize your encode or decode command")
